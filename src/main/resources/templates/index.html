@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>index page</title>
+<link rel="stylesheet" href="/css/design.css">
+</head>
+<body>
+
+
+<!-- Animation background  -->
+	<section>
+		<div class="animation-Background"></div>
+		<div class="animation-Background"></div>
+		<div class="animation-Background"></div>
+		<div class="animation-Background"></div>
+		<div class="animation-Background"></div>
+		<div class="animation-Background"></div>
+		<div class="animation-Background"></div>
+		<div class="animation-Background"></div>
+	</section>
+
+
+
+<!-- structure form  -->
+	<form id="exchange-form" class="container" autocomplete="off">
+		<h2>Choose From Current</h2>
+		<div class="cont-from">
+			<select name="from-currency" id="from-currency"></select>
+		</div>
+
+		<h2>Choose To Current</h2>
+		<div class="cont-To">
+			<select id="to-currency" name="to-currency"></select>
+		</div>
+
+		<h2>Enter Amount</h2>
+		<div class="amount">
+			<input type="number" name="amount" id="amount" placeholder="0">
+		</div>
+
+		<div class="cont-bt">
+			<button id="bt-exchange" class=" btn">exchange</button>
+		</div>
+
+
+	</form>
+
+
+
+
+	<!-- show message result -->
+
+
+	<div id="box">
+	
+		<span id="icon-msg" class="ion-cash"></span>
+		
+		<p id="txt-from"></p>
+		<p id="txt-to"></p>
+		<p id="txt-amount"></p>
+		<p id="txt-resalt"></p>
+
+		<a onclick="closeWindow()" id="Close">Close</a>
+
+	</div>
+
+
+	<script type="text/javascript" src="webjars/jquery/2.2.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/ajax.js"></script>
+
+
+
+</body>
+</html>
